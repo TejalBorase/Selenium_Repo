@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
-public class Redbus {
+public class RedbusTest {
 
 	@Test
 	public void bookTicket() throws InterruptedException {

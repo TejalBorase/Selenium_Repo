@@ -15,7 +15,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.crm.testData.FetchDataFromExcel;
+import com.crm.testData.FetchDataFromExcelTest;
 
 public class ListenerImpl  implements ITestListener, ISuiteListener{
 	
@@ -44,7 +44,7 @@ public class ListenerImpl  implements ITestListener, ISuiteListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		TakesScreenshot shot = (TakesScreenshot)FetchDataFromExcel.driver;
+		TakesScreenshot shot = (TakesScreenshot)FetchDataFromExcelTest.driver;
 		ss = shot.getScreenshotAs(OutputType.BASE64);
 		LocalDateTime date = LocalDateTime.now();
 		String format = date.format(DateTimeFormatter.ofPattern("DD_MM_YY_hh_mm_ss"));

@@ -7,6 +7,7 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.crm.testData.FetchDataFromExcel" />
+			<class name="com.crm.testData"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

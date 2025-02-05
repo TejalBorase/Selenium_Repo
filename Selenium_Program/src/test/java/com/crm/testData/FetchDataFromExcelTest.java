@@ -36,7 +36,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.crm.entity.Organization;
 
 @Listeners(value = com.crm.listener.ListenerImpl.class)
-public class FetchDataFromExcel {
+public class FetchDataFromExcelTest {
 
 	public static WebDriver driver;
 	Properties properties ;
