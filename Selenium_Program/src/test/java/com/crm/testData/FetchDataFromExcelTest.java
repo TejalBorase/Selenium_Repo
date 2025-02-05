@@ -52,10 +52,15 @@ public class FetchDataFromExcelTest {
 		Random random = new Random();
 		for (int i = 1; i < sheet.getPhysicalNumberOfRows(); i++) {
 
-			String orgName = sheet.getRow(i).getCell(0).toString();
-			String otherEmail = sheet.getRow(i).getCell(1).toString();
+			int nextInt = random.nextInt(1000);
+			String orgName = sheet.getRow(i).getCell(0).toString()+nextInt;
+			String otherEmail = sheet.getRow(i).getCell(1).toString()+nextInt;
+			
+			
+			System.out.println(orgName);
+			System.out.println(otherEmail);
 
-			organizations.add(new Organization(orgName+random.nextInt(1000), otherEmail+random.nextInt(100)));
+			organizations.add(new Organization(orgName, otherEmail));
 		}
 		return organizations.iterator();
 	}
