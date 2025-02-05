@@ -2,7 +2,7 @@ package com.crm.testData;
 
 import org.testng.annotations.Test;
 
-public class SampleTest {
+public class SampleCaseTest {
 
 	@Test
 	public void test() {
